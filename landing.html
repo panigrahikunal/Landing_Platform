@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakerzz</title>
+    <style>
+    html {
+      background-color: black;
+      cursor: pointer;
+      height:5000px;
+    }
+
+    header {
+      width: 100%;
+      height: 48px;
+      background-color: #333;
+      font-family: sans-serif;
+      overflow: hidden;
+      position: relative;
+      top: 0px;
+      right: 0px;
+    }
+    .nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: auto;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .nav li {
+      float: left;
+    }
+    .nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .nav li a:hover {
+      background-color: #111;
+    }
+    .logo
+    {
+        background-color: white;
+        width: 150px;
+        height: 500px;
+        position: relative;
+        bottom:504px;
+    }
+    .slog
+    {
+        background-color: white;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        bottom:980px;
+        left: 200px;
+    }
+    h1{
+        font-size: 35px;
+        font-weight: 40px;
+    }
+    .one
+    {
+        border-style: double;
+        border-color: white;
+        border-width: 50px;
+        height: 460px;
+        width: 1358px;
+        position: relative;
+        bottom: 1325px;
+    }
+    .three
+    {
+        position: absolute;
+        top: 2000px;
+    }
+    .four
+    {
+        background-color: white;
+        position: absolute;
+        top: 2800px;
+        border-style: double;
+        width: 1455px;
+        height: 1500px;
+    }
+    .five
+    {
+        background-image: url('offwhite.jpg');
+        position: absolute;
+        top: 1500px;
+        width: 1456px;
+        height: 605px;
+    }
+    .zoom 
+    {
+        padding: 5px;
+        background-color: white;
+        transition: transform .2s;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .zoom:hover 
+    {
+       transform: scale(1.8);
+    }
+    .foot
+    {
+        background-color: #333;
+        text-align: center;
+        color: white;
+        position: relative;
+        top: 10px;
+    }
+    .fcard
+    {
+        background-color:#111;
+        border-style: double;
+        border-color: white;
+        border-width: 10px;
+        border-radius: 10px;
+        margin-left: 50px;
+        float: left;
+        transition: transform .2s;
+    }
+    .fcard:hover
+    {
+        transform: scale(1.2);
+        width: 250px;
+    }
+    .card
+    {
+        border-style: double;
+        border-color: white;
+        border-width: 10px;
+        border-radius: 10px;
+        margin-left: 50px;
+        float: left;
+        text-align: center;
+        margin: 50px;
+    }
+    .scard
+    {
+        border-style: double;
+        border-color: white;
+        border-width: 10px;
+        border-radius: 10px;
+        margin-left: 50px;
+        float: left;
+        text-align: center;
+        margin: 60px;
+    }
+    .button
+    {
+        position: relative;
+        bottom: 5px;
+        left: 10px;
+        background-color: white;
+        color: black;font-size: 20px;
+        border-radius: 12px;
+        font-size: 30px;
+    }
+    .button:hover
+    {
+        background-color: black;
+        color: white;
+    }
+    .but 
+    {   
+        background-color: white;   
+        width: 100%;  
+        color: black;  
+        font-size: 20px; 
+        border-radius: 20px;
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+    }
+    input[type=text], input[type=password] 
+    {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+    .but:hover {   
+        opacity: 0.7;   
+    }   
+    .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+    .container {   
+        padding: 25px;   
+        margin: 60px;
+        background-color: #111;  
+        border-style: double;
+        border-color: white;
+        border-radius: 20px;
+        width: 300px;
+    }   
+    .run
+    {
+        background-color: #111;
+        position: absolute;
+        left: 550px;
+        top: 60px;
+        border-radius: 20px;
+        border-style: double;
+        border-width: 5px;
+        border-color: white;
+        height: 480px;
+        width: 800px;
+    }
+      </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right"><a class="active" href="#account">Account</a></li>
+              </ul>
+            </div>
+        </header>
+        <img src="offwhite.jpg" alt="img1" style="height: 500px;width: 100%;">
+        <div class="logo">
+            <p style="writing-mode: vertical-rl;text-orientation: mixed;font-weight: 80px;font-size: 80px;position: relative;right: 50px;transform: rotate(180deg);">SNEAKERZZ</p>
+        </div>
+        <div class="slog">
+          <h1>WHEN YOU</h1>
+          <h1>FEEL BORED</h1>
+          <h1>MAKE A COFFEE,</h1>
+          <h1>START TO SCROLL</h1>
+          <p style="font-size: 20px;font-weight: 20px;"><b>get top quality sneakers from all around</b></p>
+          <p style="font-size: 20px;font-weight: 20px;"><b>the world at your footsteps within 3 days.</b></p>
+          <p style="font-size: 20px;font-weight: 20px;"><b>your footsteps within 3 days</b>.</p>
+        </div>
+        <img src="shoe2.jpg" alt="shoe" style="position: relative;left: 700px;bottom:1375px;height: 400px;width: 700px;">
+        <div class="one">
+            <p style="color:white;font-size: 40px;position: relative;left: 10px;">Why are we different ?</p>
+            <p style="color:white;font-size: 30px;position: relative;left: 10px;">we dont just give you shoes, we make your day!</p>
+            <br><br>
+            <img src="img6.jpg" alt="img6" style="height: 130px;width:130px;border-radius: 50px;position: relative;left: 150px;" class="zoom">
+            <img src="img2.jpg" alt="img2" style="height: 130px;width:130px;border-radius: 50px;position: relative;left: 300px;" class="zoom">
+            <img src="img3.png" alt="img3" style="height: 130px;width:130px;border-radius: 50px;position: relative;left: 450px;" class="zoom">
+            <img src="img5.jpeg" alt="img5" style="height: 130px;width:130px;border-radius: 50px;position: relative;left: 600px;" class="zoom">
+        </div>
+        <div class="two">
+            <img src="img7.webp" alt="img7" style="position: relative;bottom: 1310px;width: 1457px;height: 900px;">
+            <p style="font-size: 135px;font-weight: bold;color: black;position: relative;bottom: 2330px;">RUN AN EXTRA MILE</p>
+            <img src="img8.jpg" alt="img8" style="position: relative;bottom: 2450px;left: 30px;height: 650px;width: 850px;">
+            <img src="img9.jpg" alt="img9" style="position: relative;bottom: 2800px;left: 70px;height: 300px;width: 500px;"">
+            <img src="img10.jpg" alt="img10" style="position: relative;bottom:2755px;left: 920px;height: 300px;width: 500px;">
+            <p style="font-size: 60px;font-weight: bold;position: relative;bottom: 3450px;color: white;margin: 50px;">Winter Collection</p>
+        </div>
+        <div class="three">
+         <p style="color: white;font-size: 60px;position: relative;left:60px">New Arrivals</p>
+         <div class="fcard" style="width:250px">
+            <img class="card-img-top" src="nike1.jpeg" alt="Card image" style="height:270px;width: 250px;">
+            <div class="card-body">
+              <h4 class="card-title" style="color: white;font-size: 40px;">Nike Cosmic Unity 2</h4>
+              <button class="button">buy now</button>
+            </div>
+         </div>
+         <div class="fcard" style="width:250px">
+            <img class="card-img-top" src="nike2.jpeg" alt="Card image" style="height: 270px;width: 250px;">
+            <div class="card-body">
+              <h4 class="card-title" style="color: white;font-size: 40px;">Nike Air Max 97</h4>
+              <button class="button">buy now</button>
+            </div>
+         </div>
+         <div class="fcard" style="width:250px">
+            <img class="card-img-top" src="nike3.webp" alt="Card image" style="height: 270px;width: 250px;">
+            <div class="card-body">
+              <h4 class="card-title" style="color: white;font-size: 40px;">Nike Zoom Fly 5</h4>
+              <button class="button">buy now</button>
+            </div>
+         </div>
+         <div class="fcard" style="width:250px">
+            <img class="card-img-top" src="nike4.webp" alt="Card image" style="height: 270px;width: 250px;">
+            <div class="card-body">
+              <h4 class="card-title" style="color: white;font-size: 40px;">Nike Dunk High Retro</h4>
+              <button class="button">buy now</button>
+            </div>
+         </div>
+        </div>
+        <div class="four">
+            <div class="card" style="width:600px">
+                <img class="card-img-top" src="img12.webp" alt="Card image" style="height: 600px;width: 600px;">
+                <div class="card-body">
+                  <h4 class="card-title" style="color:black;font-size: 50px;">APPAREL</h4>
+                </div>
+             </div>
+             <div class="card" style="width:600px">
+                <img class="card-img-top" src="img11.jpg" alt="Card image" style="height: 600px;width: 600px;">
+                <div class="card-body">
+                  <h4 class="card-title" style="color:black;font-size: 50px;">ACCESSORIES</h4>
+                </div>
+             </div>
+             <h4 style="color:black;font-size: 50px;margin: 50px;">STORES</h4>
+             <div class="scard" style="width:220px">
+                <img class="card-img-top" src="store1.jpg" alt="Card image" style="height: 300px;width: 220px;">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">DELHI</h4>
+                </div>
+             </div>
+             <div class="scard" style="width:220px">
+                <img class="card-img-top" src="store2.webp" alt="Card image" style="height: 300px;width: 220px;">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">MUMBAI</h4>
+                </div>
+             </div>
+             <div class="scard" style="width:220px">
+                <img class="card-img-top" src="store3.jpg" alt="Card image" style="height: 300px;width: 220px;">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">DUBAI</h4>
+                </div>
+             </div>
+             <div class="scard" style="width:220px">
+                <img class="card-img-top" src="store 4.webp" alt="Card image" style="height: 300px;width: 220px;">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">NEW YORK</h4>
+                </div>
+             </div>
+             <div class="five">
+                <form>  
+                    <div class="container">   
+                        <h1 style="color: white;font-size: 50px;">Create Account</h1>
+                        <label style="color: white;font-size: 20px;">Username : </label>   
+                        <input type="text" placeholder="Enter Username" name="username" required>  
+                        <label style="color: white;font-size: 20px;">Password : </label>   
+                        <input type="password" placeholder="Enter Password" name="password" required>  
+                        <button type="submit" class="but">Login</button>   
+                        <input type="checkbox" checked="checked"><span style="color: white;font-size: 20px;"> Remember me Forgot </span>
+                        <a href="#" style="font-size: 20px;text-decoration: none;"> password? </a>   
+                    </div>   
+                </form>
+                <div class="run">
+                    <h1 style="font-size: 60px;color: white;margin: 10px;">RUN FOR FUN</h1>
+                    <p style="font-size: 20px;color: white;margin: 10px;text-align: left;">
+                    It isorganised to motivate the people to exercise regularly and stay healthy. It is also organised in 
+                    the same way as the health runs. Run for fun is more rerated to have fun during the run. In fact run for fun is 
+                    a friendly race that involves either road running or cross country running taking part for their own enjoyment 
+                    and recreation rather than competition.Generally run for fun is organised to raise funds for a charity.</p>
+                    <h2 style="color: white;margin: 10px;">JOIN OUR RUN FOR FUN CAMPAIGN</h2>
+                    <form>
+                        <label style="color: white;font-size: 20px;margin: 10px;">NAME : </label>   
+                        <input type="text" placeholder="Enter Username" name="NAME" required style="margin: 10px;width: 750px;">
+                        <label for="email" style="color: white;font-size: 20px;margin: 10px;">EMAIL :</label>
+                        <input type="text" placeholder="Enter Email" name="email" required style="margin: 10px;width: 750px;">
+                        <button type="submit"  style="margin: 10px;width: 750px;height:40px;font-size: 20px;color: black;"><b>JOIN</b></button>
+                    </form>
+                </div>
+             </div>
+        </div>
+        <footer class="foot">
+            <p style="font-size:20px;">You can find me at</p>
+            <img src="fb.jpg" alt="fb" style="height: 40px;width: 40px;border-radius: 20px;" class="zoom">  
+            <img src="ldin.png" alt="in" style="height: 40px;width: 40px;border-radius: 20px;" class="zoom"> 
+            <img src="twiter.png" alt="twiter" style="height: 40px;width: 40px;border-radius: 20px;" class="zoom"> 
+            <p style="font-size: 19px;">This is a landing platform created by Kunal Panigrahi using html and css for project porpose. 
+            This website comprises information about my skill set my certificates and i have created forms using 
+            html and then desidned them using css.</p>
+            <p>THANK YOU</p>
+            <p>@Copyright kunal panigrahi 2023- All Right Reserved. </p>  
+        </footer> 
+    </body>
+</html>
